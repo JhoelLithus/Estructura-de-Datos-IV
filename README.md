@@ -38,7 +38,8 @@ This is a simple fibonacci heap, supporting the standard operations:
 	*************************************
 	FibHep.exe
 	*******************************
-	Once you have done this step you go to the folder where the documents of the "fibonacci heap" are located and you will realize that it generated some images; in these images are plotted the "Fibonacci Heap"
+	Once you have done this step you go to the folder where the documents of the "fibonacci heap" are located and you will realize that it generated some images;
+	in these images are plotted the "Fibonacci Heap"
 
 # References
  
