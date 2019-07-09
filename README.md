@@ -53,6 +53,9 @@ https://www.youtube.com/watch?v=sXW2VLrQ3Bs  //INSTALLATION OF THE MINGW
 
 # University
 	Universidad La Salle - Arequipa	
- 
+# Contact
+
+	* jhuallpard@ulasalle.edu.pe
+
  ## Arequipa - Perú ##
  ## Date:09/07/2019 ##
