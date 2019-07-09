@@ -1,6 +1,12 @@
-#ifndef FIBONACCI_HEAP_H_
-#define FIBONACCI_HEAP_H_
+#ifndef FIBONACCI_HEAP_H
+#define FIBONACCI_HEAP_H
+
 #include <iostream>
+#include <cstdlib>
+#include <cstdio>  
+#include <malloc.h>
+#include <fstream>
+#include <string>
 using namespace std;
 
 template <class T> 
@@ -25,7 +31,6 @@ struct node
 		node<T>* getParent() {return parent;}
 		T getValue() {return value;}
 		bool isMarked() {return marked;}
-	
 		bool hasChildren() {return child;}
 		bool hasParent() {return parent;}
 };
@@ -61,5 +66,5 @@ private:
 	node<T>* _find(node<T>* heap,T value);
 };
 
-#include "Fibonacci Heap.inl"
+#include "FibonacciHeap.inl"
 #endif

@@ -281,7 +281,8 @@ node<T>* FibonacciHeap<T>::_find(node<T>* heap,T value)
 	while(n!=heap);
 		return NULL;
 }
-/*	
+
+
 template <class T>
 void FibonacciHeap<T>:: printArbol(int num)
 {
@@ -297,34 +298,64 @@ void FibonacciHeap<T>:: printArbol(int num)
     string rt=""+ pt1 +""+ num_xt1 +""+ pt2 +""+ s +""+ pt3 +"";
     const char *buffer = rt.c_str();
 
-    os<<"graph {"<<endl;
-    os<<root->key<<endl;
-    printArbol(os,root);
+    os<<"digraph G {"<<endl;
+    //if(heap==NULL)
+    //{
+    //	printf("empty;\n}\n");
+	//	return;
+	//}
+	os<<"minimum";
+	os<<" -> ";
+	os<<'"'<<heap<<'"'<<" [constraint=false];"<<endl;
+	node<int>* c=heap;
+	do
+	{
+		printArbol(os,c);
+		c=c->getNext();
+	}
+	while(c!=heap);
+    
     os<<"}"<<endl;
     os.close();
     system(buffer);
+       
 }
-
 
 template <class T>
 void FibonacciHeap<T>::printArbol(ofstream & os, node<T> *n)
 {
-    if(n!=NULL)
+    if(heap!=NULL)
     {    
-        if(n->p_children[0]!=NULL)
+    	os<<'"'<<n<<'"';
+    	os<<" -> ";
+		os<<'"'<<n->getNext()<<'"'<<" [constraint=false,arrowhead=lnormal];"<<endl;
+    	os<<'"'<<n<<'"';
+    	os<<" -> ";
+		os<<'"'<<n->getPrev()<<'"'<<" [constraint=false,arrowhead=ornormal];"<<endl;
+    	if(n->isMarked())
+    		os<<'"'<<n<<'"'<<" [style=filled,fillcolor=grey];"<<endl;	
+        if(n->hasParent())
 		{
-            os<<n->key;
-            os<<"--";
-            os<<n->p_children[0]->key<<endl;
-            printArbol(os,n->p_children[0]);
+        	os<<'"'<<n<<'"';
+    		os<<" -> ";
+    		os<<'"'<<n->getParent()<<'"'<<" [constraint=false,arrowhead=ornormal];"<<endl;
         }
-        if(n->p_children[1]!=NULL)
+        os<<'"'<<n<<'"';
+        os<<" [label="<<n->getValue()<<"];"<<endl;
+		
+		if(n->hasChildren())
 		{
-            os<<n->key;
-            os<<"--";
-            os<<n->p_children[1]->key<<endl;
-            printArbol(os,n->p_children[1]);
-        }
+			node<int>* c=n->getChild();
+			do
+			{
+				os<<'"'<<n<<'"';
+				os<<" -> ";
+				os<<'"'<<c<<'"'<<";"<<endl;
+				printArbol(os,c);
+				c=c->getNext();
+			}
+			while(c!=n->getChild());
+		}
     }
 }
-*/	
+
