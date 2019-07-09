@@ -42,8 +42,14 @@ This is a simple fibonacci heap, supporting the standard operations:
 	in these images are plotted the "Fibonacci Heap"
 
 # References
+
+	https://www.youtube.com/watch?v=mnIBSMvNSBk
+	
+	https://www.youtube.com/watch?v=tpmiDdMllg8
+	
+	https://www.youtube.com/watch?v=sXW2VLrQ3Bs
  
-	https://www.cs.usfca.edu/~galles/JavascriptVisual/FibonacciHeap.html  //Demo Online
+	https://www.cs.usfca.edu/~galles/JavascriptVisual/FibonacciHeap.html 
 	
 	https://www.geeksforgeeks.org/fibonacci-heap-set-1-introduction/
 	
@@ -51,11 +57,7 @@ This is a simple fibonacci heap, supporting the standard operations:
 	
 	https://github.com/robinmessage/fibonacci
 	
-	https://www.youtube.com/watch?v=mnIBSMvNSBk
-	
-	https://www.youtube.com/watch?v=tpmiDdMllg8
-	
-	https://www.youtube.com/watch?v=sXW2VLrQ3Bs  //INSTALLATION OF THE MINGW
+
 
 # University
 	Universidad La Salle - Arequipa	
