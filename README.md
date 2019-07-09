@@ -42,13 +42,13 @@ This is a simple fibonacci heap, supporting the standard operations:
 
 # References
  
-	* https://www.cs.usfca.edu/~galles/JavascriptVisual/FibonacciHeap.html  //Demo Online
-	* https://www.geeksforgeeks.org/fibonacci-heap-set-1-introduction/
-	* http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf
-	* https://github.com/robinmessage/fibonacci
-	* https://www.youtube.com/watch?v=mnIBSMvNSBk
-	* https://www.youtube.com/watch?v=tpmiDdMllg8
-	* https://www.youtube.com/watch?v=sXW2VLrQ3Bs  //INSTALLATION OF THE MINGW
+https://www.cs.usfca.edu/~galles/JavascriptVisual/FibonacciHeap.html  //Demo Online
+https://www.geeksforgeeks.org/fibonacci-heap-set-1-introduction/
+http://web.karabuk.edu.tr/hakankutucu/CME222/MIT[1].Press.Introduction.to.Algorithms.2nd.Edition.eBook-TLFeBOOK.pdf
+https://github.com/robinmessage/fibonacci
+https://www.youtube.com/watch?v=mnIBSMvNSBk
+https://www.youtube.com/watch?v=tpmiDdMllg8
+https://www.youtube.com/watch?v=sXW2VLrQ3Bs  //INSTALLATION OF THE MINGW
 
 # University
 	Universidad La Salle - Arequipa	
