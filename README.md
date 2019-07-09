@@ -53,5 +53,5 @@ This is a simple fibonacci heap, supporting the standard operations:
 # University
 	Universidad La Salle - Arequipa	
  
- ##Arequipa - Perú##
- ##Date:09/07/2019##
+ ## Arequipa - Perú ##
+ ## Date:09/07/2019 ##
